@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+.chicago-gallery {
+  margin-bottom: 30px;
+}
+
 .grid {
   display: grid;
   column-gap: 64px;
@@ -63,7 +67,12 @@ body {
 }
 
 .card-footer {
-  padding: 0 30px 30px;
+  flex-grow: 1; /* Allows content to expand, pushing the button down */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ensures content stacks naturally */
+  width: 100%;
 }
 
 .btn {
@@ -75,7 +84,9 @@ body {
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 16px;
+  margin-top: auto;
+  margin-bottom: 15px;
+  padding: 15px;
   background-color: #462cb3;
   text-decoration: none;
 }
